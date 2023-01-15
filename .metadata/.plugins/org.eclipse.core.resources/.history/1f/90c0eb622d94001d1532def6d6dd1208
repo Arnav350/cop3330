@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+
+public class Main {
+
+	public static void main(String args[]) {
+		
+		Scanner sc = new Scanner(System.in);
+		float inp;
+		int amount;
+		int dollar;
+		
+		System.out.print("Enter your dollar amount: ");
+		inp = sc.nextFloat();
+		System.out.println();
+		System.out.println("You have:");
+		System.out.println();
+		
+		dollar = (int)(inp * 100);
+		System.out.println(inp);
+		inp %= 100;
+		System.out.println(inp);
+		
+		amount = dollar / 10000;
+		dollar %= 10000;
+		System.out.println("  -  " + amount + " hundred(s)");
+		
+		
+		sc.close();
+		
+	}
+	
+}

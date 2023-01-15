@@ -1,0 +1,66 @@
+import java.util.Scanner;
+
+
+public class Main {
+
+	public static void main(String args[]) {
+		
+		Scanner sc = new Scanner(System.in);
+		float dollar;
+		int amount;
+		
+		System.out.print("Enter your dollar amount: ");
+		dollar = sc.nextFloat();
+		System.out.println();
+		System.out.println("You have:");
+		System.out.println();		
+			
+		amount = (int)(dollar / 100);
+		dollar %= 100;
+		System.out.println("  -  " + amount + " hundred(s)");
+		
+		amount = (int)(dollar / 50);
+		dollar %= 50;
+		System.out.println("  -  " + amount + " fifty(s)");		
+		
+		amount = (int)(dollar / 20);
+		dollar %= 20;
+		System.out.println("  -  " + amount + " twenty(s)");
+		
+		amount = (int)(dollar / 10);
+		dollar %= 10;
+		System.out.println("  -  " + amount + " ten(s)");		
+		
+		amount = (int)(dollar / 5);
+		dollar %= 5;
+		System.out.println("  -  " + amount + " five(s)");	
+		
+		amount = (int)(dollar / 1);
+		dollar %= 1;
+		System.out.println("  -  " + amount + " one(s)");
+		
+		amount = (int)(dollar / 0.25);
+		dollar %= 0.25;
+		System.out.println("  -  " + amount + " quarter(s)");	
+		
+		amount = (int)(dollar / 0.1);
+		dollar %= 0.1;
+		System.out.println("  -  " + amount + " dime(s)");	
+		
+		amount = (int)(dollar / 0.05);
+		dollar %= 0.05;
+		System.out.println("  -  " + amount + " nickle(s)");
+		
+		
+		amount = (int)(dollar / 0.01);
+		dollar %= 0.01;
+		System.out.println("  -  " + amount + " cent(s)");		
+		
+		System.out.println();
+		System.out.println("Goodbye!");
+		
+		sc.close();
+		
+	}
+	
+}

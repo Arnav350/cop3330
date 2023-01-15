@@ -1,0 +1,65 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		String first;
+		String last;
+		String id;
+		float rate;
+		float hours;
+		float total;
+		float tax;
+		float net;
+		
+		System.out.print("Enter the Employee's full name: ");
+		first = sc.next();
+		last = sc.next();
+		System.out.print("Enter the Employee's number: ");
+		id = sc.next();
+		System.out.print("Enter the pay rate per hour: ");
+		rate = sc.nextFloat();
+		System.out.print("Enter the regular hours worked: ");
+		hours = sc.nextFloat();
+		
+		System.out.println();
+		System.out.println("Thank you!");
+		System.out.println();
+		System.out.println("here is your paycheck!");
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println("------------------------------------------");
+		System.out.println();
+		
+		System.out.println("Employee's name: " + first + " " + last);
+		System.out.println("Employee's number: " + id);
+		System.out.printf("Hourly rate of pay: %0.2f", rate);
+		System.out.printf("Hours worked: %0.2f", hours);
+		System.out.println();
+		
+		total = rate * hours;
+		tax = total * 0.06;
+		net = total - tax;
+		
+		System.out.printf("Total Gross Pay: $%0.2f", total);
+		System.out.println();
+		System.out.println("Deductions");
+		System.out.printf("Tax (6%): $%0.2f", tax);
+		System.out.println();
+		System.out.printf("Net Pay: $%0.2f Dollars", net);
+		System.out.println();
+		System.out.println("------------------------------------------");
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println("Bye!");
+		
+		
+		sc.close();
+
+	}
+
+}
