@@ -1,6 +1,9 @@
+//HW1.2
+//Arnav Patel
+
 import java.util.Scanner;
 
-public class Main {
+public class HW1_2 {
 
 	public static void main(String args[]) {
 		
